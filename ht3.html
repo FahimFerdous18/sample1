@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>hello</title>
+	<link rel="stylesheet" href="">
+	<script src="jquery.js"></script>
+</head>
+
+<body>
+	<p id="ans"></p>
+	<div id="display"></div>
+	<form>
+
+	<input type="text" name="num1" id="num1">
+	<input type="text" name="num2" id="num2">
+	<button type="button" id="sumbtn" name="sum">Sum</button>
+</form>
+<form>
+	<table>
+		<tr><td><input type="text"
+
+<script>
+	$(document).ready(function(){
+		$("#sumbtn").click(function(event){
+			var num1=$("#num1").val();
+			var num2=$("#num2").val();
+			var sum=parseInt(num1)+parseInt(num2);
+			//$("#ans").html("Ans: "+sum);
+			$("#ans").text("<p style='color:red;font-size:30px;'>"+sum+"</p>");
+			$("#display").html("<p style='color:red;font-size:30px;'>"+sum+"</p>")
+
+		});
+       //$("#sum").click(function(event){
+
+      });
+</script>
+	
+</body>
+</html>
